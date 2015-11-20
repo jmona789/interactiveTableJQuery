@@ -16,28 +16,28 @@
         <th>Remove</th>
       </tr>
       <tr>
-        <td>Jimmy</td>
-        <td>Mona</td>
-        <td>jmona789@gmail.com</td>
+        <td class="firstName">Jimmy</td>
+        <td class="lastName">Mona</td>
+        <td class="email">jmona789@gmail.com</td>
         <td><button class="btn btn-danger removeRowBtn" inputtype="button" value="Delete">X</button></td>
       </tr>
       <tr>
-        <td>Someone</td>
-        <td>Else</td>
-        <td>selse@gmail.com</td>
+        <td class="firstName">Someone</td>
+        <td class="lastName">Else</td>
+        <td class="email">selse@gmail.com</td>
         <td><button class="btn btn-danger removeRowBtn" inputtype="button" value="Delete">X</button></td>
       </tr>
       <tr>
-        <td>Another</td>
-        <td>Person</td>
-        <td>aperson@gmail.com</td>
+        <td class="firstName">Another</td>
+        <td class="lastName">Person</td>
+        <td class="email">aperson@gmail.com</td>
         <td><button class="btn btn-danger removeRowBtn" inputtype="button" value="Delete">X</button></td>
       </tr>
-      <tr>
-        <td><form><input id="newRowFirstName" class="input" placeholder="First Name" type="text" /></form></td>
-        <td><form><input id="newRowLastName" class="input" placeholder="Last Name" type="text" /></form></td>
-        <td><form><input id="newRowEmail" class="input" placeholder="Email" type="text" /></form></td>
-        <td><button id="addRowBtn" class="btn btn-primary" inputtype="button" value="Add">+</button></td>
+      <tr id="inputRow">
+        <form><td><input id="newRowFirstName" class="input" placeholder="First Name" type="text" autocomplete="off" /></td>
+        <td><input id="newRowLastName" class="input" placeholder="Last Name" type="text" autocomplete="off" /></td>
+        <td><input id="newRowEmail" class="input" placeholder="Email" type="text" autocomplete="off" /></td>
+        <td><button id="addRowBtn" class="btn btn-primary" inputtype="button" value="Add">+</button></td></form>
       </tr>
     </tbody>
   </table>
