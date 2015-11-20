@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Table</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+  <table id="table" class="table table-striped">
+    <tbody id="contactsTable">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Remove</th>
+      </tr>
+      <tr>
+        <td>Jimmy</td>
+        <td>Mona</td>
+        <td>jmona789@gmail.com</td>
+        <td><button class="btn btn-danger removeRowBtn" inputtype="button" value="Delete">X</button></td>
+      </tr>
+      <tr>
+        <td>Someone</td>
+        <td>Else</td>
+        <td>selse@gmail.com</td>
+        <td><button class="btn btn-danger removeRowBtn" inputtype="button" value="Delete">X</button></td>
+      </tr>
+      <tr>
+        <td>Another</td>
+        <td>Person</td>
+        <td>aperson@gmail.com</td>
+        <td><button class="btn btn-danger removeRowBtn" inputtype="button" value="Delete">X</button></td>
+      </tr>
+      <tr>
+        <td><form><input id="newRowFirstName" class="input" placeholder="First Name" type="text" /></form></td>
+        <td><form><input id="newRowLastName" class="input" placeholder="Last Name" type="text" /></form></td>
+        <td><form><input id="newRowEmail" class="input" placeholder="Email" type="text" /></form></td>
+        <td><button id="addRowBtn" class="btn btn-primary" inputtype="button" value="Add">+</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
